@@ -9,14 +9,17 @@
 </head>
 <body>
 	<%
+		
 		request.setCharacterEncoding("UTF-8"); //문자인코딩 설정
 		String name = request.getParameter("name");
-		System.out.println(name);
+
+		System.out.println(name); //제대로 안넘어와서 null
+		
 		
 		PersonInfoDAO personInfoDAO = new PersonInfoDAO();
-		
-		int result = personInfoDAO.savePersonInfo(name);
-// 		int result = 0;
+
+		int result = personInfoDAO.savePersonInfo(name); //null
+ 		//int result = 0;
 		
 		if(result > 0){
 	%>

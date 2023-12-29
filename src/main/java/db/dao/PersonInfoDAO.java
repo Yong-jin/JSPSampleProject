@@ -114,12 +114,13 @@ public class PersonInfoDAO {
 		return result;
 	}
 	
-	public int savePersonInfo(String name) {  // abbb221
+	public int savePersonInfo(String name) { //null
 		
 		conn = DBConnectionManager.connectDB();
 
 		String sql =  " INSERT INTO t_person_info " 
-					+ " VALUES ( ( SELECT NVL(MAX(id), 0) + 1 FROM t_person_info ), ? ) ";
+					+ " VALUES ( ( SELECT NVL(MAX(id), 0) + 1 "
+					+ " FROM t_person_info ), ? ) ";
 		int result = 0;
 		
 		try {

@@ -12,7 +12,8 @@
 	<h1>신규 인원 추가하는 페이지</h1>
 	
 	<form action="addPerson_proc.jsp" method="post">
-		<label>이름:</label><input type="text" name="name">
+		<label>이름:</label>
+		<input type="text" name="name">
 		
 		<button type="submit">추가</button>
 	</form>
