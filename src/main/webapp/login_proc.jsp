@@ -23,13 +23,13 @@
 		// 가입시점 -> 이름, 전화번호, 이메일은, 아이디, 	비밀번호 -> Account 테이블 저장! id pw
 		
 		//DB랑 확인해서 정상이면!?
-		if(로그인 성공인지?) {
+		/*if(로그인 성공인지?) {
 			session.setAttribute("loginId", id);  //abc
 		}
 		else {
 				
 			}
-		
+		*/
 	%>
 </body>
 </html>
